@@ -4,11 +4,6 @@ description: 'Wraps the firebase-tools CLI to enable common commands.'
 branding:
   icon: 'package'
   color: 'gray-dark'
-inputs:
-  node-version:
-    required: true
-    description: Docker version to use (alpine)
-    default: '12'
 runs:
   using: 'docker'
-  image: 'docker://hongaar/firebase-action:${{ inputs.node-version }}'
+  image: 'docker://hongaar/firebase-action:14'
